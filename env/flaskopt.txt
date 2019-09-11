@@ -1,0 +1,5 @@
+flask run --host=0.0.0.0
+$ export FLASK_APP=hello.py
+$ export FLASK_ENV=development
+You can also control debug mode separately from the environment by exporting FLASK_DEBUG=1.
+

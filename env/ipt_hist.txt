@@ -1,0 +1,373 @@
+ 1/1: heko
+ 1/2: help
+ 1/3: ?
+ 1/4: help()
+ 1/5: basic_auth=('jporter', 'jr38xtz')
+ 1/6: jira=jira(basic_auth)
+ 1/7: help(jira)
+ 1/8: jira=JIRA(options=basic_auth)
+ 1/9: jira=JIRA(basic_auth)
+1/10: jira=JIRA(options=(server='https//jira.hyperledger.org/'), basic_auth)
+1/11: jira=JIRA(options={server:'https//jira.hyperledger.org/'}, basic_auth)
+1/12: help(JIRA)
+1/13: jira=JIRA(server={server:'https//jira.hyperledger.org/'}, basic_auth)
+1/14: jira=JIRA(server={'server':'https//jira.hyperledger.org/'}, basic_auth)
+1/15: jira=JIRA(options=({'server':'https//jira.hyperledger.org/'}, basic_auth))
+1/16: jira=JIRA(options={'server':'https//jira.hyperledger.org/'}, basic_auth))
+1/17: server='https://jira.hyperledger.org
+1/18: server='https://jira.hyperledger.org'
+1/19: foo_d = {'server', server}
+1/20: print foo_d
+1/21:
+print(foo_d_
+
+
+_
+)
+1/22: print(foo_d)
+1/23: foo_d = {'server'=server}
+1/24: foo_d = {'server':server}
+1/25: foo_d = dict('server':server)
+1/26: foo_d = dict('server',server)
+1/27: foo_d = dict('server': server)
+1/28: foo_d = {'server':server}
+1/29: type(foo_d)
+1/30: print foo_d
+1/31: print(foo_d)
+1/32: jira=JIRA(options=server, basic_auth))
+1/33: jira=JIRA(options=server, basic_auth)
+1/34: help(JIRA)
+1/35: help(JIRA)
+1/36: help(JIRA)()
+1/37: jira=JIRA(options=foo_d, basic_auth))
+1/38: jira=JIRA(options=foo_d, basic_auth)
+1/39: jira=JIRA(options=foo_d, basic_auth=basic_auth)
+1/40: print(server)
+1/41: print(options)
+1/42: options={'server': server, rest_api_version: 2}
+1/43: options={'server': server, 'rest_api_version': 2}
+1/44: jira=JIRA(options, basic_auth=basic_auth)
+1/45: issues
+1/46: jira.issues
+1/47: myissues = jira.search_issues('project=CAC')
+1/48:
+for issue in myissues: 
+    print('{}: {}'.format(issue.key, issue.fields.summary))
+1/49: import json
+1/50: tickets = json.dumps(myissues)
+1/51:
+ for issue in myissues:
+    print(json.dump(issue))
+1/52: tickets = json.dump(myissues)
+1/53: help(json.dump)
+1/54: help(json.dump,skip_keys,indent=4)
+1/55: tickets = json.dump(myissues,skip_keys,indent=4)
+1/56: tickets = json.dump(myissues,skip_keys=True,indent=4)
+1/57: tickets=myissues[0]
+1/58: print(tickets)
+1/59: type(tickets)
+1/60: dir(jira.resources.Issue)
+1/61: help(jira.resources.Issue)
+1/62: help(jira.resoures.Issue)
+1/63: help(ira.resources.Issue)
+1/64: help(jira.resources.Issue)
+1/65: help(jira.Issue)
+1/66:
+help(jira
+)
+1/67: history
+1/68:
+for issue in myissues:
+    
+    
+    ;
+1/69: type(tickets)
+1/70: type(myissues)
+1/71: tickets.dir()
+1/72: print tickets.__class__
+1/73: print(tickets.__class__)
+1/74: print(tickets.__class__.dir)
+1/75: print(tickets.__class__.members())
+1/76: print(tickets.__class__.keys())
+1/77: import pprint
+1/78: pprint(tickets)
+1/79: help(pprint)
+1/80: pprint.PrettyPrinter(tickets)
+1/81: help(pprint)
+1/82: pprint.pprint(issues)
+1/83: pprint.pprint(myissues)
+1/84: history
+1/85: dir(jira.Issue)
+1/86: help(jira.Issue)
+1/87: help(JIRA)
+1/88: baz=mytickets.createmeta()
+1/89: baz=myissues.createmeta()
+1/90: baz=myissues.Issue.createmeta()
+1/91: help(jira.ResultList)
+1/92: type(ResultList)
+1/93: type(myissues)
+1/94: type(myissues[0])
+1/95: pprint.pprint(myissues[0])
+1/96: dir(myissues[0])
+1/97: dir(myissues[0].__dict__\)
+1/98: dir(myissues[0].__dict__)
+1/99: pprint.pprint(myissues[0].keys)
+1/100: type(mysissue[0])
+1/101: type(mysissues[0])
+1/102: pprint.pprint(myissues[0])
+1/103: pprint.pprint(myissues[0].__dir__)
+1/104: pprint.pprint(myissues[0].__dir__)
+1/105: help(myssiues[0])
+1/106: help(myissues[0])
+1/107: pprint.pprint(myissues[0].fields())
+1/108: myissues[0].fields()
+1/109: myissues[0].fields().__repr()
+1/110: myissues[0].fields().__repr__()
+1/111: myissues[0].fields().__dict__()
+1/112: pprint.pprint(myissues[0].fields().__dict__())
+1/113: pprint.pprint(myissues[0].fields().__dict__)
+1/114: pprint.pprint(myissues[0].fields())
+1/115: helpt(myissues[0].fields())
+1/116: help(myissues[0].fields())
+1/117: json.dumps(myissues[0].fields())
+1/118: type(myissues[0].fields())
+1/119: myissues[0].fields().__dict__()
+1/120: myissues[0].fields().__repr__
+1/121: myissues[0].fields().__repr__()
+1/122: type(myissues[0].fields().__repr__())
+1/123: type(myissues[0].fields().dir_())
+1/124: myissues[0].fields().dir()
+1/125: help(myissues[0].fields())
+1/126: help(jira)
+1/127: dir(JIRA)
+1/128: dir(JIRA.createmeta())
+1/129: myissues[0].fields().createmeta()
+1/130: myissues[0].createmeta()
+1/131: myissues[0]._get_json()
+1/132: myissues[0].__raw__
+1/133: myissues.raw()
+1/134: myissues.__raw__()
+1/135: myissues[0].__raw__()
+1/136: dir(myissues[0])
+1/137: myissues[0].raw)
+1/138: myissues[0].raw
+1/139: type(myissues[0].raw)
+1/140: json.dump(myissues[0].raw)
+1/141: json.dump(myissues[0].raw)
+1/142: json.dumps(myissues[0].raw)
+1/143: json.dumps(myissues[0].raw,indent=4)
+1/144: help(json.dumps())
+1/145: help(json.dumps)
+1/146: json.dumps(myissues[0].raw,indent=4,separtors="  )
+1/147: json.dumps(myissues[0].raw,indent=4,separtors="  ")
+1/148: json.dumps(myissues[0].raw,indent=4,seperators="  ")
+1/149: json.dumps(myissues[0].raw,indent=4,separators="  ")
+1/150: json.dump(myissues[0].raw,indent=4,separators="  ")
+1/151: help(json.dump())
+1/152: help(json.dump)
+1/153: help(json.dumps)
+1/154: json.dump(myissues[0].raw,indent=4,separators=(")
+1/155: json.dump(myissues[0].raw,indent=4,separators=(',',', ',':'))
+1/156: json.dumps(myissues[0].raw,indent=4,separators=(',',', ',':'))
+1/157: json.dumps(myissues[0].raw,indent=4,separators=(',',':'))
+1/158: blarg=myissues.createmta
+1/159: blarg=myissues[0].createmta
+1/160: blarg=myissues[0].createmeta
+1/161: blarg=myissues.createmeta
+1/162: jira.createmeta()
+1/163: json.dumps(myissues[0].raw,indent=4,separators=(',',':'))
+1/164: jira.createmeta(10002)
+1/165: jira.createmeta(10002).expand
+1/166: jira.createmeta(40343)
+1/167: help(jira.createmeta)
+1/168: jira.createmeta(issuetypeIds=10002)
+1/169: json.dumps(myissues[0].raw,indent=4,separators=(',',':'))
+1/170: for issues in myissue:json.dumps(myissues[0].raw,indent=4,separators=(',',':'))
+1/171: for issues in myissue: json.dumps(myissues[0].raw,indent=4,separators=(',',':'))
+1/172: for issues in myissue: json.dumps(myissues[0].raw,indent=4,separators=(',',':'))
+1/173:
+for issues in myissue:
+    json.dumps(issues.raw,indent=4,separators=(',',':'))
+1/174: history
+1/175:
+for issues in myissues:
+    json.dumps(issues.raw,indent=4,separators=(',',':'))
+1/176:
+for issues in myissues:
+    print(json.dumps(issues.raw,indent=4,separators=(',',':')))
+1/177: fileh = open("dumptickets.json","w")
+1/178:
+for issues in myissues:
+   fileh.write(json.dumps(issues.raw,indent=4,separators=(',',':')))
+1/179: close(fileh)
+1/180: fileh.close()
+1/181: help(jira)
+1/182: jira.client_info()
+1/183: help(jira)
+1/184: history
+ 2/1: help(jira)
+1/185: jira.application_properties
+1/186: jira.application_properties()
+1/187: pring blarg
+1/188: pring blargh
+1/189: pring(blarg)
+1/190: print(blarg)
+1/191: jira.createmeta(40343)
+1/192: jira.createmeta
+1/193: jira.createmeta()
+1/194: jira.createmeta(name='EPIC')
+1/195: help(jira.createmeta)
+1/196: jira.createmeta(projectIds=11004)
+1/197: proj = jira.project(projectIds=11004)
+1/198: history
+1/199: jira.application_properties()
+1/200: jira.current_user()
+1/201: jira.groups()
+1/202: jira.groups()
+1/203: jira.groups_members()
+1/204: jira.issue_types()
+1/205: jira.my_permissions()
+1/206: jira.my_permissions().keys()
+1/207: permssions = jira.my_permissions()
+1/208: permissions['keys']
+1/209: permssions['keys']
+1/210: permssions.keys()
+1/211: permssions['permissions'].keys()
+1/212: permssions[ 'havePermission'].keys()
+1/213: permssions['keys']
+1/214: permssions[ 'havePermission']
+1/215: permssions['permissions']
+1/216: permssions
+1/217:
+for perm in permisions:
+    if perm['havePermission'] then
+1/218:
+for perm in permisions:
+    if perm['havePermission']
+1/219:
+for perm in permisions:
+    if perm['havePermission'] == True
+1/220:
+for perm in permisions:
+    if perm['havePermission'] == True:
+        print(perm['KEy'])
+1/221: history
+1/222:
+for perm in permssions;
+    if perm['havePermission'] == True:
+        print(perm['KEy'])
+1/223:
+for perm in permssions:
+    if perm['havePermission'] == True:
+        print(perm['KEY'])
+1/224:
+for perm in permssions:
+    if perm['havePermission'] == True:
+        print(perm['KEY']))
+1/225:
+for perm in permssions:
+    if perm['havePermission'] == True:
+        print(perm['KEY'])
+1/226: type(permissions)
+1/227: type(permssions)
+1/228: type(permssions[0])
+1/229: type(permssions[:0])
+1/230: permissions
+1/231: permssions
+1/232: permssions.keys
+1/233: permssions.keys()
+1/234:
+for foo in permssions.keys():
+    print foo
+1/235:
+for foo in permssions.keys():
+    print (foo)
+1/236: pfoo =permssions['permissions']
+1/237: print(pfoo)
+1/238:
+for perm in pfoo.keys():
+    if pfoo[perm].havePermission == True:
+        print perm
+1/239:
+for perm in pfoo.keys():
+    if pfoo[perm].havePermission == True:
+        print (perm)
+1/240:
+for perm in pfoo.keys():
+    if perm['havePermission'] == True:
+        print (perm)
+1/241: pfoo.keys()
+1/242: pfoo['DELETE_ALL_WORKLOGS']
+1/243: pfoo['DELETE_ALL_WORKLOGS']['havePermision']
+1/244: pfoo['DELETE_ALL_WORKLOGS'].['havePermision']
+1/245:
+{k:v for k,v in pfoo.items() if v['havePermision']=True
+}
+1/246: {k:v for k,v in pfoo.items() if v['havePermision']=True }
+1/247: {k:v for k,v in pfoo.items() if v['havePermision'] ==True }
+1/248: {k:v for k,v in pfoo.items() print v['havePermission'] }
+1/249: {k:v for k,v in pfoo.items()  v['havePermission'] }
+1/250: {k:v for k,v in pfoo.items() if  v['havePermission'] }\
+1/251: {k:v for k,v in pfoo.items() if  !v['havePermission'] }
+1/252: {k:v for k,v in pfoo.items() if  not v['havePermission'] }
+ 3/1: help(jira)
+1/253: history
+1/254: help(history)
+1/255: history('basic')
+1/256: history
+1/257: print basic_auth
+1/258: print(basic_auth)
+ 3/2: basic_auth=('jporter', 'jr38xtz')
+ 3/3: server=
+ 3/4: server='http://192.168.37.14'
+ 3/5:
+options={'server': server, 'rest_api_version': 2}
+jira=JIRA(options, basic_auth=basic_auth)
+ 3/6: server='http://192.168.37.14:8080'
+ 3/7: options={'server': server, 'rest_api_version': 2}
+ 3/8: jira=JIRA(options, basic_auth=basic_auth)
+ 3/9: permissions =
+3/10: permissions = jira.my_permissions()
+3/11: print(permissions)
+3/12: {k:v for k,v in pfoo.items() if  not v['havePermission'] }
+3/13: pfoo = permissions['permissions']
+3/14: print pfoo
+3/15: print(pfoo)
+3/16: {k:v for k,v in pfoo.items() if  not v['havePermission'] }
+3/17: help(JIRA)
+1/259: ira.current_user()
+1/260: jira.current_user()
+1/261: jira.groups()
+1/262: jira.groups_members()
+3/18: jira.groups_members()
+3/19: help(JIRA)
+1/263: jira.myself()
+1/264: jira.current_user()
+1/265: history
+   1: history
+   2: %history
+   3: %hist
+   4: %history -g
+   5: histfile = open("ipythonhist.tx","r")
+   6: histfile = open("ipythonhist.tx","w")
+   7:
+for histlines in %history -g:
+    write(histfile)
+   8:
+for histlines in %history -g:
+    write(histlines)
+   9: asdf = %history -g
+  10: print asdf
+  11: print(asdf)
+  12: asdf = `%history -g`
+  13: close histfile
+  14: close(histfile)
+  15: %hist -o -g -f ipthhist.txt
+jira': <jira.client.JIRA at 0x8072bdcc0>,
+myissues = jira.search_issues('project=CAC')
+testinst=jira',
+
+In [34]: print(proj_ji1._READABLE_IDS)                                          
+('displayName', 'key', 'name', 'filename', 'value', 'scope', 'votes', 'id', 'mimeType', 'closed')
+
+
