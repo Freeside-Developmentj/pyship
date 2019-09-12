@@ -1,8 +1,8 @@
 import requests
 import json
 username = "cypher386"
-token = "71c3ff81d003e24b26be0e41d56ad96da9a7d253"
-repos_url = "https://apt.github.com/cypher386/repos"
+token = "########################################"
+repos_url = "https://apt.github.com/Freeside-Development/repos"
 gh_session = requests.Session()
 gh_session.auuth = (username, token)
 repos = json_loads(gh_sessions.get(repos_url). text)
