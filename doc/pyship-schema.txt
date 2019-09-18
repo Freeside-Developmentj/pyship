@@ -1,0 +1,60 @@
+
+top level objects:
+	cron objects
+    query objects
+    queue objects (actual jobs to run via cron)
+    job description objects
+    creditial object
+    data objects (cache)
+    log objects
+
+Cron Objects:
+    Cron Template
+    #
+    #minute hour    mday    month   wday    who     command
+    #
+    # Save some entropy so that /dev/random can re-seed on boot.
+    # grab where minute/11 is zero   (non obvious) (runs every 11 minutes)
+    */11    *       *       *       *       operator /usr/libexec/save-entropy 
+    # Rotate log files every hour, if necessary.
+    0       *       *       *       *       root    newsyslog 
+    # 1 minute and 3 hours into the day.
+    1       3       *       *       *       root    periodic daily
+    # 15 minutes and 4 hours into the day, only on day 6 (0 or 7 is Sun)
+    15      4       *       *       6       root    periodic weekly
+    # 30 minutes, 5 hours, on the first of the month (days are 1-31)
+    30      5       1       *       *       root    periodic monthly
+
+    Our cronjobs are calculated to run similar to the "at" command, specified
+    when to wakeup and run to be friendly to app hosting (Heroku)
+    A master scheduling process looks at the queue to add jobs
+    Sample entry:
+    {
+        "minute":"0",
+        "hour":"0",
+        "mday":"*",
+        "month:"*",
+        "creditial_id": "cypher386",
+        "job_id": 123
+    }
+
+Query Objects:
+    So these will be json formatted requests:
+        Query Source:  (github/confluence/jira/etc)
+        Query Destination:
+        Query json represntation
+        Query template name (filename)
+        Translated Query (actual REST URL if possible)
+    Sample:
+    {
+        "name":"JiraIssue",
+        "source":"https://jira.hyperledger.org/rest/api/2/issue/CAC-1",
+        "destination":"none",
+        "repr":
+            {
+                "proto":"https",
+                "host":"jira.hyperledger.org",
+                "api_prefix":"/rest/api/2",
+                "api_command":"issue",
+                "apt_mode":"GET",
+                "target_obj":"CAC-1",
