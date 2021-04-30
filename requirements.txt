@@ -51,7 +51,7 @@ sqlite3==0.0.0
 times==0.7
 Tkinter==0.0.0
 tornado==3.0.1
-urllib3==1.25.3
+urllib3==1.25.8
 uWSGI==2.0.18
 Werkzeug==0.15.4
 flask-restful==1.0.3
